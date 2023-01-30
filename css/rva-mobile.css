@@ -1,0 +1,62 @@
+html,body {
+	/* overflow-x: hidden; */
+}
+
+#enc {
+	flex-wrap: wrap;
+	
+	width: 100%;
+	max-width: 2000px; 
+	margin: auto;
+	display: flex;
+	background-color: #002642;
+}
+#logo {
+	width: 100%;
+}
+nav {
+	width: 100%;
+	padding-top: 0px;
+}
+nav div {
+	width: auto;
+	height: 60px;
+}
+
+nav div a {
+	font-size: 40px;
+}
+
+nav div a:hover {
+	font-size: 50px;
+}
+
+#banner {
+	height: 30vw; 
+}
+
+.section-title {
+	background-color: #002642;
+	color: #ffffff;
+	text-align: center;
+	font-size: 30px;
+	width: 100vw;
+	padding-right:20px;
+}
+#comics-div {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	height: 240vw;
+}
+.comiccover {
+	width: 80vw;
+}
+
+#button a {
+	font-size: 8vw;
+}
+
+#email {
+	font-size: 8vw;
+}
