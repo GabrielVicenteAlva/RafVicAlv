@@ -1,5 +1,6 @@
-html,body {
-	/* overflow-x: hidden; */
+body {
+	overflow-x: hidden;
+	width: 100vw;
 }
 
 #enc {
@@ -13,26 +14,38 @@ html,body {
 }
 #logo {
 	width: 100%;
+	padding-bottom: 0px;
 }
 nav {
 	width: 100%;
 	padding-top: 0px;
+	margin-bottom: 20px;
+	padding: 0px;
+	padding-bottom: 15px;
 }
 nav div {
-	width: auto;
-	height: 60px;
+	width: 100vw !important;
+	height: 40px;
+}
+nav div:before {
+    content: "";
+    margin-left: -100%;
+}
+nav div:after {
+    content: "";
+    margin-right: -100%;
 }
 
 nav div a {
-	font-size: 40px;
+	font-size: min(18vw, 40px);
 }
 
 nav div a:hover {
-	font-size: 50px;
+	font-size: min(18vw, 50px);
 }
 
 #banner {
-	height: 30vw; 
+	height: 35vw; 
 }
 
 .section-title {
@@ -47,16 +60,33 @@ nav div a:hover {
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
-	height: 240vw;
+	height: 270vw;
+	margin-top: -5vw;
 }
 .comiccover {
-	width: 80vw;
+	width: 90vw;
+}
+
+p {
+	font-size: 8vw;
+}
+
+h1 {
+	font-size: 14vw;
+}
+
+h2 {
+	font-size: 12vw;
+}
+
+#portfolio .text a {
+	font-size: 12vw;
 }
 
 #button a {
 	font-size: 8vw;
 }
 
-#email {
-	font-size: 8vw;
+#about h1 {
+	margin-top: 24px;
 }

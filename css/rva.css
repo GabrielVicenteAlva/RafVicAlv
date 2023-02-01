@@ -22,7 +22,7 @@ body {
 }
 
 #logo {
-	width: 700px;
+	width: 600px;
 	padding: 20px;
 	display: flex;
 	justify-content: center;
@@ -32,14 +32,13 @@ body {
 	width: 100%;
 	height: fit-content;
 	margin:auto;
-	min-width: 500px;
 }
 
 nav {
 	line-height: 50px;
 	width: 100%;
 	list-style-type: none;
-	padding: 45px;
+	padding: 15px;
 	padding-bottom: 15px;
 	display: flex;
 	justify-content: space-around;
@@ -48,21 +47,22 @@ nav {
 }
 
 nav div {
+	margin-top: 30px;
 	height: 90px;
 	text-align: center;
 }
 
 nav div:nth-child(1) {
-	width: 205px;
+	width: 162px;
 }
 nav div:nth-child(2) {
-	width: 241px;
+	width: 192px;
 }
 nav div:nth-child(3) {
-	width: 364px;
+	width: 298px;
 }
 nav div:nth-child(4) {
-	width: 277px;
+	width: 223px;
 }
 
 nav div a {
@@ -70,11 +70,11 @@ nav div a {
 	font-weight: 400; 
 	color: #ffffff;
 	text-decoration: none; 
-	padding:20px;
+	padding: 10px;
 	transition: all 0.15s ease;
 }
 nav div a:hover {
-	font-size: 70px;
+	font-size: 60px;
 	font-weight: 400;
 	color: #ffffff;
 }
@@ -84,7 +84,7 @@ nav div a:hover {
 	/* width: 100%; */
 /* } */
 :root {
-	--parallax-y: 80px;
+	--parallax-y: 0px;
 }
 #banner {
 	/* The image used */
@@ -119,6 +119,7 @@ nav div a:hover {
 	display: flex;
 	justify-content: space-evenly;
 	height: 33vw;
+	margin-top: -20px;
 }
 
 .comiccover {
@@ -144,6 +145,7 @@ nav div a:hover {
 	text-decoration: none; 
 	padding:20px; 
 	padding-bottom: 10px;
+	transition: all 0.15s ease;
 }
 .text a:hover {
 	font-size: 70px;
@@ -152,25 +154,27 @@ nav div a:hover {
 }
 
 #button {
-	background-color: 1D4E89;
-	color: #ffffff;
-	text-align: center;
-	font-size: 40px;
-	width: max-content;
-	margin: 10px auto;
-	padding: 20px 20px;
+	display: flex;
+	height: 110px;
+    justify-content: center;
+    align-items: center;
 }
 #button a {
+	width: max-content;
+	height: max-content;
+	margin-top: -40px;
+	text-align: center;
+	padding: 20px;
+	background-color: #1D4E89;
 	font-size: 50px;
 	font-weight: 400; 
 	color: #ffffff; 
 	text-align: center;
 	text-decoration: none;
-	
 	transition: all 0.15s ease;
 }
 #button a:hover {
-	font-size: 70px;
+	font-size: 60px;
 	font-weight: 400;
 	color: #ffffff;
 }
@@ -181,6 +185,11 @@ nav div a:hover {
 
 #portfolio .text img {
 	height: 40px;
+	transition: all 0.15s ease;
+}
+
+#portfolio .text a:hover img {
+	height: 55px;
 }
 
 /*--------seccion contacto----*/
@@ -207,4 +216,15 @@ nav div a:hover {
 #logos a img:hover {
 	width: 100%;
 	margin: 0%;
+}
+
+h1 {
+	margin-top: 30px;
+}
+
+.portfolio-link {
+	display: flex;
+	height: 60px;
+    justify-content: center;
+    align-items: center;
 }
