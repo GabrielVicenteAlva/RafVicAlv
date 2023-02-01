@@ -6,10 +6,12 @@ document.querySelector(".writeHeader").innerHTML = `
             <img src="img/RTRlogo.png">
         </div>
         <div id="nav">
-            <div><a href="#about">HOME</a></div>
-            <div><a href="#comics">CHARACTERS</a></div>
-            <div><a href="#portfolio">ARCHIVE</a></div>
-            <div><a href="#contact">SUPPORT</a></div>
+            <div><a href="../index.html">HOME</a></div>
+            <!--
+            <div><a href="characters.html">CHARACTERS</a></div>
+            <div><a href="archive.html">ARCHIVE</a></div>
+            <div><a href="about.html">SUPPORT</a></div>
+            -->
         </div>
     </header>
 `;

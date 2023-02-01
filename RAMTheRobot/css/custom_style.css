@@ -1,4 +1,71 @@
+@font-face {
+    font-family: ComicRV;
+    src: url(Comic_rv_esp-Regular.ttf);
+}
+
+body {
+	font-family:comicRV;
+	background-color: #1D4E89;
+    color: #FFFFFF;
+}
+
 header {
     background-color: #002642;
     display: flex;
-  }
+}
+
+header img {
+    width: 500px;
+    max-width: 98%;
+}
+
+header #nav {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+    background-color: transparent;
+    padding-right: 80px;
+}
+
+#nav div {
+	margin-top: 5px;
+	text-align: center;
+    width: 90px;
+}
+
+a {
+    color: #FFFFFF;
+	text-decoration: none; 
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
+#nav div a {
+	font-size: 40px;
+	transition: all 0.15s ease;
+}
+#nav div a:hover {
+	font-size: 50px;
+}
+
+#authorNotes {
+	font-family:comicRV;
+    color: #000000;
+    padding: 10px;
+}
+
+#authorNotes p {
+    margin: 10px;
+}
+
+.comicNav {
+    margin: 5px;
+}
+.comicNav img {
+    height: 40px;
+    width: 40px;
+}
