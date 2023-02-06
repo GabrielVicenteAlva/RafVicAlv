@@ -11,7 +11,7 @@ let pg = Number(findGetParameter("pg")); //make "pg" mean the current page numbe
 ////////////////////////
 
 //REALLY IMPORTANT ONES
-const maxpg = 3; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files. 
+const maxpg = 49; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files. 
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
 
 // COMIC PAGE SETTINGS
@@ -49,16 +49,20 @@ if (pg == 0) {pg = maxpg;} //display MOST RECENT COMIC when the webpage is loade
 const pgData = [
     {
         pgNum: 1, //what page number it is
-        title: "The First Page Title", //the title of the page (leaving this blank will default it to "Page X")
+        title: "R.A.M. the robot", //the title of the page (leaving this blank will default it to "Page X")
         date: writeDate(2021, 3, 16), //the date on which the page was posted (mainly for the archive). The date is written using a function called "writeDate", basically just put writeDate and then some parenthesis and, comma separated, the year followed by the month and the day. Don't forget another comma at the end outside the parenthesis!
         altText: "", //the alt text (mouse over text) for this particular comic. put nothing inbetween the quotes for no alt text
         imageFiles: 1, //how many image files this page is split into
         authorNotes: `
+		<p> this strip was posted in:</p></br>
+		<a href="https://www.reddit.com/r/furry_irl/comments/noe1g3/robot_irl/"> Reddit </a> </br> </br>
+		<a href="https://www.deviantart.com/rafvicalv/art/R-A-M-the-robot-881098709"> DeviantArt </a>
+		
             `,
     },
     {
         pgNum: 2,
-        title: "The Second Page Title",
+        title: "Ram Maid",
         date: writeDate(2021, 3, 17),
         altText: "",
         imageFiles: 1,
@@ -67,14 +71,475 @@ const pgData = [
     },
     {
         pgNum: 3,
-        title: "The Third Page Title",
+        title: "Ram is a robot",
         date: writeDate(2021, 3, 18),
         altText: "",
         imageFiles: 1,
         authorNotes: `
-            <p>Hola</p>
+            <p>I will write something here soon</p>
             `,
     },
+	 {
+        pgNum: 4,
+        title: "Broken arm",
+        date: writeDate(2021, 3, 18),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 5,
+        title: "Soul",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 6,
+        title: "Mods are fun",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 7,
+        title: "Ram and the shinnning",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 8,
+        title: "Evil Ram",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 9,
+        title: "Ice cream",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 10,
+        title: "Boop",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 11,
+        title: "New year in space",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 12,
+        title: "Beach episode",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 13,
+        title: "Power outage",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 14,
+        title: "Ram the chef",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>(i think i forgot to post this on DA)</p>
+            `,
+    },
+	{
+        pgNum: 15,
+        title: "Ram and the portal",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 16,
+        title: "Robots like her",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 17,
+        title: "Ram's screen",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 18,
+        title: "Waiting room",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 19,
+        title: "Ram and the spaceship's AI",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 20,
+        title: "Ram's alien cat",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 21,
+        title: "Ram at the pawn shop",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 22,
+        title: "Ram's revenge",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 23,
+        title: "Jake's drawing",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 24,
+        title: "The devil and Ram",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 25,
+        title: "Ram's first comic remake",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 26,
+        title: "Trick",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 27,
+        title: "Ram's facial recocnition system",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 28,
+        title: "the oven",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 29,
+        title: "ram's clothes",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 30,
+        title: "Jake's invention",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 31,
+        title: "bug",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 32,
+        title: "rear window",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 33,
+        title: "crying",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 34,
+        title: "threshold",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 35,
+        title: "The future",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 36,
+        title: "Halloween",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 37,
+        title: "Ali the alien",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 38,
+        title: "flirt",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 39,
+        title: "The bed",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 40,
+        title: "Ram POV",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 41,
+        title: "Robot Clones",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 42,
+        title: "Organic Ram",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 43,
+        title: "Ram learing beeing alive 1",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 44,
+        title: "Ram learing beeing alive 2",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 45,
+        title: "Ram learing beeing alive 3",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 46,
+        title: "ram's best day",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 47,
+        title: "Status quo",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 48,
+        title: "Ram's joke",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	{
+        pgNum: 49,
+        title: "Ram is space",
+        date: writeDate(2023, 02, 1),
+        altText: "",
+        imageFiles: 1,
+        authorNotes: `
+            <p>I will write something here soon</p>
+            `,
+    },
+	
 ];
 
 //below is a function you dont rly need to mess with but if you're more experienced with js you can

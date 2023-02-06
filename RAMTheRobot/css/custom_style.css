@@ -4,7 +4,7 @@
 }
 
 body {
-	font-family:comicRV;
+	font-family:comicRV, "Comic Sans MS", "Comic Sans", sans-serif;
 	background-color: #1D4E89;
     color: #FFFFFF;
 }
@@ -32,7 +32,16 @@ header #nav {
 #nav div {
 	margin-top: 5px;
 	text-align: center;
-    width: 90px;
+}
+
+#nav div:nth-child(1) {
+    width: 240px;
+}
+#nav div:nth-child(2) {
+    width: 200px;
+}
+#nav div:nth-child(3) {
+    width: 300px;
 }
 
 a {
@@ -60,6 +69,16 @@ a:hover {
 
 #authorNotes p {
     margin: 10px;
+	font-size: 30px;
+}
+
+#authorNotes a {
+    color: #000000;
+	font-size: 30px;
+}
+
+#authorNotes a:hover {
+    font-size: 50px;
 }
 
 .comicNav {
@@ -68,4 +87,28 @@ a:hover {
 .comicNav img {
     height: 40px;
     width: 40px;
+}
+
+.archivePage h1 {
+	font-family: ComicRV, "Comic Sans MS", "Comic Sans", sans-serif;
+	color: black;
+	font-size: 40px;
+	padding-top: 20px;
+}
+
+.comic-archive strong {
+	font-family: ComicRV, "Comic Sans MS", "Comic Sans", sans-serif;
+	color: black;
+	font-size: 30px;
+}
+
+.archiveCellDate span {
+	font-family: ComicRV, "Comic Sans MS", "Comic Sans", sans-serif;
+	color: black;
+	font-size: 20px;
+	display: none;
+}
+
+.writeAuthorNotes a {
+	transition: all 0.15s ease;
 }
