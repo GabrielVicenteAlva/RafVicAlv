@@ -7,10 +7,10 @@ document.querySelector(".writeHeader").innerHTML = `
         </div>
         <div id="nav">
             <div><a href="index.html">LAST PAGE</a></div>
+            <div><a href="about.html">ABOUT</a></div>
             <div><a href="archive.html">ARCHIVE</a></div>
             <div><a href="../index.html">RAFVICALV.COM</a></div>
             <!--
-            <div><a href="characters.html">CHARACTERS</a></div>
             <div><a href="about.html">SUPPORT</a></div>
             -->
         </div>
