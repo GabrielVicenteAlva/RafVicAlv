@@ -8,7 +8,7 @@ html {
 }
 
 body {
-	font-family:comicRV;
+	font-family: comicRV, "Comic Sans MS", "Comic Sans", sans-serif;
 	background-color: #f9fcff;
 	margin: 0px;
 }
